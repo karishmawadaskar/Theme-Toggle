@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Theme-Toggle</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box-container">
+        <h1>Day and Night Theme Toggle</h1>
+        <div class="container1">
+            <div class="mini-container">
+                <h1 id="input">Simple Intrest Calculator</h1>
+                <label for="input1" id="input">Principal amonunt($):</label>
+                <input type="text" class="input-box" id="investment" onkeyup="calculateSI()" />
+                <label for="input1" id="input">Annual Intrest Rate(%):</label>
+                <input type="text" class="input-box" id="interest-rate" onkeyup="calculateSI()" />
+                <label for="input1" id="input">Number of year:</label>
+                <input type="text" class="input-box" id="investment-years" onkeyup="calculateSI()" />
+                <label id="input">Simple intrest</label>
+                <p  class="input-box result" id="result"></p>
+                <button class="btn" id="reset" onclick="reset()">Reset</button>
+            </div>
+        </div>
+        <div class="container">
+
+            <button id="themeToggle" onclick="themeToggle()">Toggle Theme</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
